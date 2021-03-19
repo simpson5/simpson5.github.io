@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMPSON</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div id="background">
+      <!-- main page -->
+      <div id="main">
+        <h1 class="text-shadow">The Simpson</h1>
+        <!-- 자기소개 page -->
+        <a href="#" class="link" id="open-introduce">SIMPSON</a>
+        <div class="modal_wrap introduce">
+          <i class="fas fa-times fa-2x" onclick="off_popup()"></i>
+          <div class="content">
+            <header>자기 소개</header>
+            <hr />
+            <article>
+              <span id="name">박정현</span>
+              <br /><br />
+              <span id="age">29</span>
+              <br /><br />
+              <span id="like">지금은 자바를 제일 좋아합니다</span>
+              <br /><br />
+              <span id="etc">
+                집안 사정과 적성에 맞지 않아 대학을 휴학 후 공무원 준비중 친구의
+                소개로 프로그래밍을 시작했습니다.<br /><br />
+                다른 공부들과 달리 자기가 직접 만들어 간다는 것에 흥미를
+                느꼈습니다.
+                <br /><br />
+                첫 프로젝트에서 아쉬움이 많아 refactoring을 공부 하고 싶지만
+                지금은 진도 따라잡기 바쁘네요 ㅠㅜ... <br /><br />
+                간단한 게임도 만들고 싶고 어플도 만들고 싶고 하고 싶은건 많지만
+                천천히 차분히 갈려고 합니다!
+              </span>
+            </article>
+          </div>
+        </div>
+        <!-- 취미 page(본인의 관심사 page로 변경가능) -->
+        <a href="#" class="link" id="open-hobby">HOBBY</a>
+        <div class="modal_wrap hobby">
+          <i class="fas fa-times fa-2x" onclick="off_popup()"></i>
+        </div>
+        <!-- 개발자 roadmap page -->
+        <a href="#" class="link" id="open-roadmap">ROADMAP</a>
+        <div class="modal_wrap">
+          <i class="fas fa-times fa-2x" onclick="off_popup()"></i>
+          <div class="content" id="road_map_start">
+            <header>로드맵</header>
+            <hr />
+            <p class="typing"></p>
+          </div>
+        </div>
+        <!-- 로그인 | 회원가입 page -->
+        <a href="#" class="link" id="open-login">LOG IN</a>
+        <div class="modal_wrap login">
+          <i class="fas fa-times fa-2x" onclick="off_popup()"></i>
+          <div class="content login_content">
+            <fieldset>
+              <table class="login_table">
+                <tr>
+                  <th class="text-shadow">ID :</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="login_input"
+                      name="id"
+                      style="font-size: 4vh"
+                      id="login_id"
+                      autocomplete="off"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-shadow">PW :</th>
+                  <td>
+                    <input
+                      type="password"
+                      class="login_input"
+                      name="password"
+                      style="font-size: 4vh"
+                      id="login_pw"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <br /><br />
+              <button class="login_button text-shadow" id="login_confirm">
+                LOG IN
+              </button>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <button class="login_button text-shadow" id="sign_up">
+                SING UP
+              </button>
+            </fieldset>
+          </div>
+        </div>
+        <!-- 로그아웃 -->
+        <a href="index.html" class="link" id="log_out">RESET</a>
+      </div>
+      <!-- 회원가입 page-->
+      <div id="sign_up_page" aria-autocomplete="none">
+        <form action="">
+          <fieldset>
+            <p>
+              <label for="sign_up_id">ID :&nbsp</label
+              ><input
+                type="text"
+                id="sign_up_id"
+                placeholder="소문자영어와 숫자로만"
+                autocomplete="off"
+              />
+              <button class="login_button text-shadow" id="check_id_button">
+                CHECK
+              </button>
+            </p>
+            <p>
+              <label for="sign_up_pw">PW :&nbsp</label
+              ><input
+                type="password"
+                id="sign_up_pw"
+                placeholder="영어와 숫자 특수기호가능"
+              />
+              <button class="login_button text-shadow" id="check_pw_button">
+                CHECK
+              </button>
+            </p>
+            <p>
+              <label for="sign_up_name">NAME :&nbsp</label
+              ><input type="text" id="sign_up_name" autocomplete="off" />
+            </p>
+            <p>
+              <label for="sign_up_birth">BIRTH :&nbsp</label
+              ><input
+                type="text"
+                id="sign_up_birth"
+                placeholder="8자리로 입력"
+                autocomplete="off"
+              />
+              <button class="login_button text-shadow" id="check_birth_button">
+                CHECK
+              </button>
+            </p>
+            <p style="text-align: center">
+              <label for="gender-male">M</label>
+              <input type="radio" name="gender" id="gender-male" value="m" />
+              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <label for="gender-female">F</label>
+              <input type="radio" name="gender" id="gender-female" value="f" />
+            </p>
+            <p>
+              <label for="sign_up_hobby">HOBBY :&nbsp</label>
+              <input
+                type="text"
+                id="sign_up_hobby"
+                placeholder=",로 구분"
+                autocomplete="off"
+              />
+            </p>
+            <p>
+              <label for="sign_up_like">like :&nbsp</label>
+              <input type="text" id="sign_up_like" autocomplete="off" />
+            </p>
+            <p style="text-align: center">
+              <textarea id="sign_up_etc" cols="30" rows="10"></textarea>
+            </p>
+            <p style="text-align: center">
+              <button
+                type="submit"
+                class="login_button text-shadow"
+                id="sign_up_button"
+              >
+                SIGN UP
+              </button>
+              <button class="login_button text-shadow" id="cancle_button">
+                CANCLE
+              </button>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <script src="js/main.js"></script>
+</html>

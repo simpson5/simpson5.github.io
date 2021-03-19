@@ -1,0 +1,57 @@
+#sign_up_page {
+  width: 40%;
+  height: 50%;
+  left: 55%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  /* text-align: center; */
+  z-index: 3;
+  display: none;
+}
+
+#sign_up_page label {
+  text-align: center;
+  display: inline-block;
+  width: 10vw;
+  font-size: 2vw;
+  color: yellow;
+  text-shadow: -1px 0px 4px black, 1px 0px 4px black, 0px -1px 4px black,
+    0px 1px 4px black;
+}
+
+#sign_up_page p {
+  margin-bottom: 3vh;
+}
+
+#sign_up_page input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 0.5vh solid black;
+  text-align: center;
+  font-size: 2vh;
+  color: yellow;
+  text-shadow: -1px 0px 4px black, 1px 0px 4px black, 0px -1px 4px black,
+    0px 1px 4px black;
+}
+#sign_up_page input::placeholder {
+  opacity: 0;
+}
+
+#sign_up_page input:hover::placeholder {
+  color: yellow;
+  opacity: 0.5;
+}
+
+#sign_up_page input:focus {
+  outline: none;
+}
+
+#sign_up_etc {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.5vh solid black;
+  width: 50%;
+  color: yellow;
+  text-shadow: -1px 0px 4px black, 1px 0px 4px black, 0px -1px 4px black,
+    0px 1px 4px black;
+}

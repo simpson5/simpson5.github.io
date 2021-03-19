@@ -1,0 +1,84 @@
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes blur-out-expand {
+    0% {
+      filter: blur(0.01);
+    }
+    100% {
+      letter-spacing: 1em;
+      filter: blur(12px) opacity(0%);
+    }
+  }
+
+  @keyframes intro {
+    0% {
+      top: 50%;
+      left: 30%;
+      transform: scale(0) translate(-50%, 0%);
+    }
+    100% {
+      transform: scale(1) translate(-50%, 0%);
+    }
+  }
+  
+  @keyframes intro2 {
+    0% {
+      transform:scale(0);
+      top: 50%;
+      left: 50%;
+    }
+    100% {
+      transform:scale(1);
+    }
+  }
+
+  @keyframes intro3 {
+    0% {
+      top: 25%;
+      left: 25%;
+      transform:scale(0) translate(-50%, -50%);
+      
+    }
+    100% {
+      top: 50%;
+      left: 50%;
+      transform:scale(1) translate(-50%, -50%);
+    }
+  }
+
+  @keyframes intro4 {
+     0% {
+       top: 25%;
+       left: 25%;
+       transform:scale(0) translate(-50%, -50%);
+     }
+ 
+     100% {
+       top: 50%;
+       left: 50%;
+       transform:scale(1) translate(-50%, -50%) rotateY(1440deg);
+     }
+    }
+
+    @keyframes intro5 {
+        0% {
+          top: 25%;
+          left: 25%;
+          transform:scale(0) translate(-50%, -50%);
+        }
+    
+        100% {
+          top: 50%;
+          left: 50%;
+          transform:scale(1) translate(-50%, -50%);
+        }
+       }

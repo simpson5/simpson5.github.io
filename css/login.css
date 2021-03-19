@@ -1,0 +1,31 @@
+.login_table {
+  margin: auto;
+  font-size: 4vw;
+}
+
+.login_input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 0.5vh solid black;
+  text-align: center;
+}
+
+.login_input:focus {
+  outline: none;
+}
+
+.login_button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: yellow;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2vw;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+div.login {
+  margin-top: 10vh;
+}
